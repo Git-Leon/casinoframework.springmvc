@@ -21,10 +21,15 @@ public class Card {
         return this.suit;
     }
 
-    public int getValue() {
+    public Integer getValue() {
         return rank.getValue();
     }
 
+    public Integer getSecondaryValue() {
+        return rank.getSecondaryValue();
+    }
+
+    @Override
     public String toString() {
         return getRank().name() + " of " + getSuit().name();
     }

@@ -6,9 +6,6 @@ import rocks.zipcodewilmington.casinoapplication.casino.games.cardgames.toolkit.
 import rocks.zipcodewilmington.casinoapplication.casino.games.cardgames.toolkit.Hand;
 import rocks.zipcodewilmington.casinoapplication.casino.games.schema.AbstractPlayer;
 
-/**
- * @author leon on 9/8/18.
- */
 
 /**
  * Created by leon.hunter on 2/1/2017.
