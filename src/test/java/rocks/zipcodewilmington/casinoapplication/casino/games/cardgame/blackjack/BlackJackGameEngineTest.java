@@ -1,6 +1,7 @@
 package rocks.zipcodewilmington.casinoapplication.casino.games.cardgame.blackjack;
 
 import org.junit.Assert;
+import org.junit.Test;
 import rocks.zipcodewilmington.casinoapplication.casino.games.cardgames.blackjack.BlackJackGame;
 import rocks.zipcodewilmington.casinoapplication.casino.games.cardgames.blackjack.BlackJackGameEngine;
 import rocks.zipcodewilmington.casinoapplication.casino.games.cardgames.blackjack.BlackJackPlayer;
@@ -12,6 +13,7 @@ import rocks.zipcodewilmington.casinoapplication.casino.games.cardgames.toolkit.
  * @author leon on 9/8/18.
  */
 public class BlackJackGameEngineTest {
+    @Test
     public void testBlackJackPlayerWithBlackJack() {
         // Given : initialization
         Card ace = new Card(Rank.ACE, Suit.CLUBS);
