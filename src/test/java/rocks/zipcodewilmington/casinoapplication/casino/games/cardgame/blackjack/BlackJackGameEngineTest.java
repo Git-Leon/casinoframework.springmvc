@@ -18,17 +18,17 @@ public class BlackJackGameEngineTest {
         // Given : initialization
         Card ace = new Card(Rank.ACE, Suit.CLUBS);
         Card jack = new Card(Rank.JACK, Suit.CLUBS);
-        BlackJackPlayer bjp = new BlackJackPlayer(null);
-        BlackJackGame bjg = new BlackJackGame();
-        BlackJackGameEngine bjge = new BlackJackGameEngine(bjg);
+        BlackJackPlayer player = new BlackJackPlayer(null);
+        BlackJackGame game = new BlackJackGame();
+        BlackJackGameEngine engine = new BlackJackGameEngine(game);
 
         // Given : Setup
-        bjg.addPlayer(bjp);
-        bjp.addCard(ace);
-        bjp.addCard(jack);
+        game.addPlayer(player);
+        player.addCard(ace);
+        player.addCard(jack);
 
         // When
-        bjge.evaluateTurn(bjp);
+        engine.evaluateTurn(player);
 
         // Then : TODO - implement `then` clause
         Assert.fail();

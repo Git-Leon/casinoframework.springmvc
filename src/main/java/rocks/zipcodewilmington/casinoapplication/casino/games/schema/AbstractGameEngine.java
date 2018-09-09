@@ -8,7 +8,7 @@ abstract public class AbstractGameEngine<
         GameType extends GameInterface<GameTypePlayer>>
         implements GameEngineInterface<GameTypePlayer, GameType> {
 
-    private final GameType game;
+    protected final GameType game;
     protected final Iterable<GameTypePlayer> players;
 
     public AbstractGameEngine(GameType game) {
@@ -22,8 +22,6 @@ abstract public class AbstractGameEngine<
 
     @Override
     public void run() {
-        players.forEach(player -> {
-            evaluateTurn(player);
-        });
+        players.forEach(player -> evaluateTurn(player));
     }
 }

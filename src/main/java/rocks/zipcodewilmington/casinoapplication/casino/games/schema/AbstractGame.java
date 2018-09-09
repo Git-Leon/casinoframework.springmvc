@@ -5,6 +5,7 @@ import java.util.List;
 
 /**
  * @author leon on 9/8/18.
+ * Performs CRUD operations on List object
  */
 abstract public class AbstractGame<TypeOfPlayer extends PlayerInterface>
         implements GameInterface<TypeOfPlayer> {
