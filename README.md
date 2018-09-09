@@ -7,7 +7,8 @@
 
 * **Description:**
     * The following project has many pre-built tools to help build and scale your project as quickly as possible.
-    * Familiarize yourself with the general infrastructure and utilities, then build a plan of action for how to scale the project as a group.
+        * Familiarize yourself with the general infrastructure and utilities, then build a plan of action for how to scale the project as a group.
+        * If you find the infrastructure disagreeable, you may completely scrap it, or borrow just what is needed.
     * Ensure there are at least 5 playable games in total.
     * The minimum technology stack for the completion of the project is `Spring`, and `Angular`.
         * Additional technologies like [Jasmine](https://en.wikipedia.org/wiki/Jasmine_(JavaScript_testing_framework)), [Travis](travis-ci.org/), or [Cucumber](https://cucumber.io/), are encouraged but not required.
@@ -20,7 +21,7 @@
 
 #### `casino.games.schema` package
 * The `schema` package provides infrastructure to enforce 3 critical aspects:
-    1. `Player` has reference to a respective profile.
+    1. `Player` has a `Profile`.
     2. `Game` has a 1-to-many relationship with players.
     3. `GameEngine` mediates the behavior between a `Game` and many `Player` objects.
     
